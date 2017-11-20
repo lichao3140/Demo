@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CIntercomDemo</string>
+
+    <string name="main_login">登录</string>
+    <string name="main_logout">登出</string>
+    <string name="main_bind">绑定</string>
+    <string name="main_unbind">解绑</string>
+    <string name="main_qr_openlock">二维码开锁</string>
+    <string name="main_record">记录</string>
+    <string name="main_new_callin">新呼入</string>
+    <string name="main_qrcode_hint">请将二维码置于扫描框内</string>
+
+    <string name="main_callout">呼叫</string>
+    <string name="main_accept">接听</string>
+    <string name="main_hangup">挂断</string>
+    <string name="main_snapshot">截图</string>
+    <string name="main_unlock">开锁</string>
+    <string name="main_speaker">扬声器</string>
+    <string name="main_microphone">麦克风</string>
+
+    <string name="main_no_login">未登录</string>
+    <string name="main_no_bind">未绑定</string>
+    <string name="main_pic_save">截图保存在</string>
+    <string name="main_openlock_success">开锁成功</string>
+    <string name="main_login_success">登录成功</string>
+    <string name="main_login_fail">登录失败</string>
+    <string name="main_bind_success">绑定成功</string>
+    <string name="main_bind_fail">绑定失败，原因&#058;&#160;</string>
+    <string name="main_unbind_success">解绑成功</string>
+    <string name="main_unbind_fail">解绑失败</string>
+    <string name="main_qrcode_error">二维码错误</string>
+
+    <!-- QRCodeData.java -->
+    <string name="door_machine">门口机</string>
+    <string name="room_machine">室内机</string>
+    <string name="district">区</string>
+    <string name="building">栋</string>
+    <string name="unit">单元</string>
+    <string name="room">室</string>
+    <string name="main_room_number">号</string>
+</resources>

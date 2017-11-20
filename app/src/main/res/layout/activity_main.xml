@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_title_blue" >
+
+        <TextView
+            android:id="@+id/main_tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:minWidth="48dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/main_login"
+            android:textColor="@drawable/font_color_white"
+            android:textSize="@dimen/main_title_size" />
+
+        <TextView
+            android:id="@+id/main_tv_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center_vertical|end"
+            android:minWidth="48dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/main_bind"
+            android:textColor="@drawable/font_color_white"
+            android:textSize="@dimen/main_title_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:background="@color/main_bg_black" >
+
+        <TextView
+            android:id="@+id/main_tv_devicenote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/main_font_white"
+            android:textSize="@dimen/main_note_size"
+            android:ellipsize="middle"/>
+
+        <SurfaceView
+            android:id="@+id/main_surface_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/monitor_tv_offline"-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:indeterminateDrawable="@drawable/progress_drawable_white" />-->
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#3c3c3c"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/main_layout_accept"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/main_btn_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_accept"
+                    android:text="@string/main_accept"
+                    android:textColor="@color/main_btn_font"
+                    android:textSize="@dimen/main_btn_size" />
+            </FrameLayout>
+
+            <!--   <FrameLayout
+                     android:id="@+id/monitor_layout_hangup"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="4"
+                     android:visibility="visible" >
+
+                     <Button
+                         android:id="@+id/monitor_btn_hangup"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:background="@null"
+                         android:drawablePadding="5dp"
+                         android:drawableTop="@drawable/png_monitor_icon_hangup"
+                         android:text="@string/monitor_hangup"
+                         android:textColor="@color/monitor_btn_text"
+                         android:textSize="16sp" />
+                 </FrameLayout> -->
+
+            <FrameLayout
+                android:id="@+id/main_layout_snapshot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+
+                <Button
+                    android:id="@+id/main_btn_snapshot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_snapshot"
+                    android:text="@string/main_snapshot"
+                    android:textColor="@color/main_btn_font"
+                    android:textSize="@dimen/main_btn_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/main_layout_openlock"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+
+                <Button
+                    android:id="@+id/main_btn_openlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_openlock"
+                    android:text="@string/main_unlock"
+                    android:textColor="@color/main_btn_font"
+                    android:textSize="@dimen/main_btn_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/main_layout_speaker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+
+                <Button
+                    android:id="@+id/main_btn_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_speaker"
+                    android:text="@string/main_speaker"
+                    android:textColor="@color/main_btn_font"
+                    android:textSize="@dimen/main_btn_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/main_layout_microphone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" >
+
+                <Button
+                    android:id="@+id/main_btn_microphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_microphone"
+                    android:text="@string/main_microphone"
+                    android:textColor="@color/main_btn_font"
+                    android:textSize="@dimen/main_btn_size" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
