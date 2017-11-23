@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1511165835453"
+    timestamp="1511417177341"
     token="6453148991404859938"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="427" />
+        duration="1357" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="59" />
+        duration="67" />
     <task
         name="verifier"
-        duration="86" />
+        duration="53" />
 
     <artifact
         location="F:\lqh\2700dp1\DPCIntercom_AndroidSDK_v1.0.3\Demo\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1511165835453"
+        timestamp="1511417177341"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="F:\lqh\2700dp1\DPCIntercom_AndroidSDK_v1.0.3\Demo\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
